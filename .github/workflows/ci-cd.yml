@@ -39,5 +39,5 @@ jobs:
             docker pull tarunpurush/portfoliov2:latest
             docker stop portfolio-container || true
             docker rm portfolio-container || true
-            docker run -d -p 80:80 --name portfolio-container --restart always tarunpurush/portfoliov2:latest
+            docker run -d -p 3000:80 --name portfolio-container --restart always tarunpurush/portfoliov2:latest
           EOF
